@@ -1,0 +1,218 @@
+[
+  {
+    "image": "https://i.ibb.co.com/7JPcsf4n/chatflow.png",
+    "title": "ChatFlow",
+    "companyName": "TechNova",
+    "id": 1,
+    "description": "ChatFlow is a next-generation communication app.\nIt offers seamless group chats and voice rooms.\nEnhanced security with end-to-end encryption.\nCross-platform support for web and mobile.\nTrusted by thousands of remote teams worldwide.\nIncludes file sharing and collaborative tools for productivity.",
+    "size": 120,
+    "reviews": 4589,
+    "ratingAvg": 4.6,
+    "downloads": "125M",
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 460 },
+      { "name": "4 star", "count": 1030 },
+      { "name": "5 star", "count": 2729 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/pvCH9w3p/taskpilot.png",
+    "title": "TaskPilot",
+    "companyName": "Orion Labs",
+    "id": 2,
+    "description": "TaskPilot helps teams track work efficiently.\nOrganize projects, assign tasks, and set deadlines.\nGet visual insights with progress dashboards.\nSupports integrations with Slack and Notion.\nIdeal for agile teams and project managers.\nIncludes real-time notifications and progress tracking for each member.",
+    "size": 85,
+    "reviews": 3901,
+    "ratingAvg": 4.4,
+    "downloads": "9.8M",
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 270 },
+      { "name": "3 star", "count": 560 },
+      { "name": "4 star", "count": 1150 },
+      { "name": "5 star", "count": 1731 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/3mL5PC8b/fittrack.jpg",
+    "title": "FitTrack Pro",
+    "companyName": "PulseSoft",
+    "id": 3,
+    "description": "FitTrack Pro is your fitness and nutrition companion.\nTrack workouts, calories, and heart rate.\nSyncs with popular wearables for real-time data.\nOffers AI-based fitness recommendations.\nHelps users stay consistent and motivated.\nProvides weekly progress reports and personalized coaching tips.",
+    "size": 95,
+    "reviews": 5270,
+    "ratingAvg": 4.8,
+    "downloads": "16.5M",
+    "ratings": [
+      { "name": "1 star", "count": 85 },
+      { "name": "2 star", "count": 190 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 980 },
+      { "name": "5 star", "count": 3665 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/1fyjdtXG/travelmate.jpg",
+    "title": "TravelMate",
+    "companyName": "GlobalTrek",
+    "id": 4,
+    "description": "TravelMate simplifies your travel planning experience.\nFind the best hotels, flights, and tour packages.\nPersonalized itineraries based on your interests.\nOffline mode for saved trips and maps.\nPerfect for solo and group travelers.\nOffers currency converters, local guides, and travel tips for all destinations.",
+    "size": 140,
+    "reviews": 6840,
+    "ratingAvg": 4.7,
+    "downloads": "22M",
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 340 },
+      { "name": "3 star", "count": 520 },
+      { "name": "4 star", "count": 1440 },
+      { "name": "5 star", "count": 4330 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/SCkdGX6/noteease.png",
+    "title": "NoteEase",
+    "companyName": "Paperless Co.",
+    "id": 5,
+    "description": "NoteEase makes note-taking delightful and productive.\nSupports text, voice, and image notes.\nCloud sync ensures your data is always available.\nOrganize with folders and smart tags.\nLightweight, fast, and beautifully designed.\nOffers customizable templates and handwriting recognition for tablets.",
+    "size": 70,
+    "reviews": 3470,
+    "ratingAvg": 4.3,
+    "downloads": "89M",
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 390 },
+      { "name": "3 star", "count": 680 },
+      { "name": "4 star", "count": 1120 },
+      { "name": "5 star", "count": 1040 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/s98KF159/photogrid.png",
+    "title": "PhotoGrid",
+    "companyName": "PixArt Studio",
+    "id": 6,
+    "description": "PhotoGrid brings creative photo editing to your fingertips.\nCollage maker, filters, and AI background removal.\nSupports direct sharing to Instagram and Snapchat.\nRegular template updates for festivals and trends.\nLoved by over 3 million creators worldwide.\nIncludes text overlays, stickers, and animated GIFs to enhance photos.",
+    "size": 150,
+    "reviews": 9350,
+    "ratingAvg": 4.5,
+    "downloads": "31M",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 960 },
+      { "name": "4 star", "count": 1850 },
+      { "name": "5 star", "count": 5740 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/DPY9rS6z/financeguru.png",
+    "title": "FinanceGuru",
+    "companyName": "Wealthy Labs",
+    "id": 7,
+    "description": "FinanceGuru empowers users to manage their expenses.\nTrack income, spending, and savings goals.\nVisualize spending trends via charts.\nGet personalized investment tips.\nSimple, secure, and beginner-friendly interface.\nOffers budgeting templates and alerts for upcoming bills.",
+    "size": 110,
+    "reviews": 4720,
+    "ratingAvg": 4.2,
+    "downloads": "11.5M",
+    "ratings": [
+      { "name": "1 star", "count": 410 },
+      { "name": "2 star", "count": 520 },
+      { "name": "3 star", "count": 790 },
+      { "name": "4 star", "count": 1180 },
+      { "name": "5 star", "count": 1820 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/8LWFg8KW/edusmart.jpg",
+    "title": "EduSmart",
+    "companyName": "Learnify",
+    "id": 8,
+    "description": "EduSmart is a digital classroom in your pocket.\nAttend live classes, take quizzes, and review notes.\nOffline video downloads for learning anywhere.\nInteractive tools for students and teachers.\nUsed by schools and colleges globally.\nSupports progress tracking and assignment submissions for teachers.",
+    "size": 160,
+    "reviews": 6200,
+    "ratingAvg": 4.6,
+    "downloads": "20.5M",
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1480 },
+      { "name": "5 star", "count": 3620 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/fd7QFHB6/codelab.png",
+    "title": "CodeLab",
+    "companyName": "DevCraft",
+    "id": 9,
+    "description": "CodeLab is an interactive coding platform.\nSupports 10+ programming languages.\nBuilt-in compiler and collaborative editor.\nAI code suggestions for beginners.\nPerfect for students, developers, and teams.\nIncludes coding challenges and real-time peer collaboration.",
+    "size": 130,
+    "reviews": 5400,
+    "ratingAvg": 4.7,
+    "downloads": "19M",
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 280 },
+      { "name": "3 star", "count": 570 },
+      { "name": "4 star", "count": 1270 },
+      { "name": "5 star", "count": 3140 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Y7tYstMx/musicverse.jpg",
+    "title": "MusicVerse",
+    "companyName": "Harmony Inc.",
+    "id": 10,
+    "description": "MusicVerse lets you stream and share music seamlessly.\nCreate playlists and discover trending artists.\nOffline download support for premium users.\nAI-curated recommendations.\nSmooth playback with a minimalist interface.\nSupports collaborative playlists and music sharing with friends.",
+    "size": 170,
+    "reviews": 8500,
+    "ratingAvg": 4.9,
+    "downloads": "41M",
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 410 },
+      { "name": "4 star", "count": 1120 },
+      { "name": "5 star", "count": 6570 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/wrCzRY40/mindspace.png",
+    "title": "MindSpace",
+    "companyName": "WellnessNow",
+    "id": 11,
+    "description": "MindSpace is a meditation and relaxation app.\nFeatures guided meditations for sleep and focus.\nTrack mood and mindfulness streaks.\nBeautiful visuals and calm sounds.\nSupports daily reminders for mental wellness.\nIncludes breathing exercises and stress management tutorials.",
+    "size": 105,
+    "reviews": 7600,
+    "ratingAvg": 4.8,
+    "downloads": "28M",
+    "ratings": [
+      { "name": "1 star", "count": 160 },
+      { "name": "2 star", "count": 290 },
+      { "name": "3 star", "count": 420 },
+      { "name": "4 star", "count": 1150 },
+      { "name": "5 star", "count": 5580 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/C5JWrDHs/shopeasy.png",
+    "title": "ShopEasy",
+    "companyName": "Marketly",
+    "id": 12,
+    "description": "ShopEasy delivers a smooth online shopping experience.\nFast checkout and secure payments.\nProduct recommendations powered by AI.\nReal-time tracking and easy returns.\nOne-stop shop for everything you need.\nIncludes discount alerts, wishlists, and customer reviews for informed shopping.",
+    "size": 145,
+    "reviews": 9800,
+    "ratingAvg": 4.6,
+    "downloads": "50M",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 810 },
+      { "name": "4 star", "count": 1840 },
+      { "name": "5 star", "count": 6430 }
+    ]
+  }
+]
