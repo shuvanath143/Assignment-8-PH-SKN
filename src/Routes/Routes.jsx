@@ -6,6 +6,7 @@ import Home from "../pages/Home/Home";
 import AppStore from "../pages/AppStore/AppStore";
 import AppDetails from "../pages/AppDetails/AppDetails";
 import AllApps from "../pages/AllApps/AllApps";
+import Installation from "../pages/Installation/Installation";
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +17,6 @@ export const router = createBrowserRouter([
       {
         index: true,
         path: "/",
-        loader: () => fetch("/appData.json").then(res => res.json()),
         Component: Home,
       },
       {
@@ -38,6 +38,11 @@ export const router = createBrowserRouter([
         loader: () => fetch("/appData.json").then(res => res.json()),
         Component: AllApps,
       },
+      {
+        path: "/Installation",
+        loader: () => fetch("/appData.json").then(res => res.json()),
+        Component: Installation
+      }
     ],
   },
 ]);

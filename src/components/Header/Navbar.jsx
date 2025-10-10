@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const handleOnApps = (e) => {
     e.preventDefault();
-    window.open("/AppStore", "_blank");
+    window.open("/AllApps", "_blank");
   };
 
   return (
@@ -53,15 +53,15 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to="/Root">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/AppStore" onClick={handleOnApps}>
+            <Link to="/AllApps" onClick={handleOnApps}>
               Apps
             </Link>
           </li>
           <li>
-            <a>Installation</a>
+            <Link to="/Installation">Installation</Link>
           </li>
         </ul>
       </div>

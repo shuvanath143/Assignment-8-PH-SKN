@@ -1,16 +1,18 @@
 
+import { use } from 'react';
 import Card from './Card';
 import { Link } from 'react-router';
 
-const Cards = ({data}) => {
+const Cards = ({appData}) => {
 
+    const data = use(appData)
     return (
-        <div>
-            <div>
-                <p>Trending Apps</p>
+        <div className='inter-font'>
+            <div className='text-center text-[#001931] space-y-3 my-3'>
+                <p className='text-5xl font-bold'>Trending Apps</p>
                 <p>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='grid grid-cols-4'>
+            <div className='grid grid-cols-4 my-5'>
                 {
                     data.slice(0, 8).map((card) => <Card card={card}></Card>)
                 }

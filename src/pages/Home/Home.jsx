@@ -1,17 +1,17 @@
 import Banner from '../../components/Banner/Banner';
-
-import { useLoaderData } from 'react-router';
 import Cards from '../../components/Cards/Cards';
-
+import { Suspense } from 'react';
+import Spinner from '../../components/Spinner/Spinner';
 
 const Home = () => {
-    
-    const data = useLoaderData()
-    console.log(data)
+    const appData = fetch("/appData.json").then(res => res.json())
+    console.log(appData)
     return (
         <div>
             <Banner></Banner>
-            <Cards data={data}></Cards>
+            <Suspense fallback={ <Spinner></Spinner> }>
+                <Cards appData={appData}></Cards>
+            </Suspense>
         </div>
     );
 };

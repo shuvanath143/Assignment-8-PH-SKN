@@ -8,7 +8,7 @@ const Card = ({ card }) => {
   console.log(ratingAvg);
   return (
     <Link to={`AppDetails/${id}`}>
-      <div className="m-2 border-2 border-red-400 flex flex-col justify-center items-center p-3 shadow-sm rounded-2xl">
+      <div className="m-2 border-2 border-red-400 flex flex-col justify-center items-center p-3 shadow-sm rounded-2xl bg-white">
         <img src={image} alt="" className="h-60 rounded-2xl" />
         <p className="text-2xl font-medium my-3">{title}</p>
         <div className="flex justify-between items-center text-base font-medium w-full">

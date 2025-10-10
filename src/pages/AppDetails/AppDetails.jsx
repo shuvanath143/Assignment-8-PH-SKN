@@ -8,14 +8,11 @@ import { getLocalStorage, setLocalStorage } from "../../SetAndGet";
 
 const AppDetails = () => {
   const { id } = useParams();
+  const [flag, setFlag] = useState(false);
   const data = useLoaderData();
 
-  const [flag, setFlag] = useState(false);
-
-  // Find the app details based on the ID from params
   const appDetails = data.find((app) => app.id === Number(id));
 
-  // On mount, check if this app is already installed
   useEffect(() => {
     const installedApps = getLocalStorage("apps") || [];
     if (installedApps.includes(Number(id))) {
@@ -23,7 +20,6 @@ const AppDetails = () => {
     }
   }, [id]);
 
-  // Handle installation click
   const handleInstallation = () => {
     const installedApps = getLocalStorage("apps") || [];
     const appId = Number(id);
