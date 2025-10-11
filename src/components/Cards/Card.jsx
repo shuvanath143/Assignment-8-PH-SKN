@@ -5,7 +5,7 @@ import { Link } from "react-router";
 
 const Card = ({ card }) => {
   const { id, title, image, ratingAvg, downloads } = card;
-  // console.log(ratingAvg);
+
   return (
     <Link to={`AppDetails/${id}`} className="border-2 border-red-400 flex flex-col justify-center items-center md:p-3 shadow-sm rounded-2xl bg-white">
       <div className="p-2">
