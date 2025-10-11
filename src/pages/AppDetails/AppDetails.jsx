@@ -67,7 +67,7 @@ const AppDetails = () => {
           </div>
           <button
             onClick={handleInstallation}
-            disabled={flag} // disable button if installed
+            disabled={flag}
             className={`btn mt-4 px-6 py-2 rounded ${flag ? "bg-gray-400 cursor-not-allowed" : "bg-[#00d390]"}`}
           >
             {flag ? "Installed" : "Install"}
