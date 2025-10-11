@@ -4,8 +4,10 @@ import { Suspense } from 'react';
 import Spinner from '../../components/Spinner/Spinner';
 
 const Home = () => {
+    
     const appData = fetch("/appData.json").then(res => res.json())
     console.log(appData)
+
     return (
         <div>
             <Banner></Banner>

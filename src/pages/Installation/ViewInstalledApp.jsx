@@ -5,11 +5,11 @@ import { IoMdDownload } from 'react-icons/io';
 const ViewInstalledApp = ({sortedApp}) => {
     const {image, title, downloads, ratingAvg, size} = sortedApp
     return (
-        <div className='flex justify-between items-center text-justify bg-white my-3 py-3 px-4 mx-4'>
-            <div className='rounded-lg bg-[#d9d9d9] p-3'>
-                <img src={image} alt={title} className='h-15 w-15'/>
+        <div className='flex flex-col md:flex-row justify-between items-center text-justify bg-white my-3 py-3 px-4 mx-2 md:mx-4 '>
+            <div className='rounded-xl bg-[#dddbdb] p-3'>
+                <img src={image} alt={title} className='h-15 w-15 rounded-xl'/>
             </div>
-            <div className='flex-1'>
+            <div className='text-center md:text-left md: flex-1'>
                 <h3 className='px-3 text-xl font-semibold'>{title}</h3>
                 <div className='flex items-center'>
                     <div className="flex items-center justify-center rounded-full px-3 py-1 text-[#00d390]">

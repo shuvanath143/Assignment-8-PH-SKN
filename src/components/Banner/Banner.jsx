@@ -3,9 +3,9 @@ import heroImg from "../../assets/hero.png"
 
 const Banner = () => {
     return (
-        <div className='flex flex-col justify-around items-center py-5 inter-font'>
+        <div className='flex flex-col justify-around items-center px-2 py-5 inter-font '>
             <div className='text-center'>
-                <h1 className='text-7xl'>We Build 
+                <h1 className='text-5xl md:text-7xl'>We Build 
                     <br /> 
                     <span className='text-[#632EE3]'>Productive </span> 
                     Apps
@@ -28,7 +28,7 @@ const Banner = () => {
                 <p className='mt-5 text-5xl font-semibold'>
                     Trusted by Millions, Built for You
                 </p>
-                <div className='flex justify-between items-center gap-5 text-center w-3xl mx-auto py-10'>
+                <div className='flex flex-col md:flex-row justify-between items-center gap-5 text-center md:w-3xl mx-auto py-10'>
                     <div className='text-base font-medium space-y-2'>
                         <p>Total Downloads</p>
                         <p className='text-3xl'>29.6M</p>

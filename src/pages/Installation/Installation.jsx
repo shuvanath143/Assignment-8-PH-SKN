@@ -30,12 +30,12 @@ const Installation = () => {
 
   if (sortedApps.length === 0) return <AppsNotFound />;
     return (
-        <div className='bg-[#D9D9D9] inter-font space-y-3 py-15 mx-auto text-center'>
+        <div className='bg-[#F1F5E8] inter-font space-y-3 py-15 mx-auto text-center '>
             <h1 className='text-5xl font-bold'>Your Installed Apps</h1>
             <p className='text-[#627382] text-xl'>Explore All Trending Apps on the Market developed by us</p>
 
-            <div className="flex justify-between items-center mb-4 mx-4">
-                <p className="text-2xl font-semibold">
+            <div className="flex flex-col md:flex-row justify-between items-center mb-4 mx-4 space-y-3">
+                <p className="text-sm md:text-2xl font-semibold">
                 <span>({appsId.length})</span> Apps Found
                 </p>
                 <select

@@ -8,14 +8,14 @@
 // const AllApps = () => {
 
 //   const data = useLoaderData();
-//   const [searchApp, setSearchApp] = useState("");  
+//   const [searchApp, setSearchApp] = useState("");
 
 //   const search = data.filter((searchedApp) =>
 //     searchedApp.title.toLowerCase().includes(searchApp.toLowerCase())
 //   );
 
 //   if(search.length == 0) return <AppsNotFound></AppsNotFound>
-  
+
 //   return (
 //     <div>
 
@@ -50,7 +50,6 @@
 
 // export default AllApps;
 
-
 // new
 
 import React, { useState, useEffect } from "react";
@@ -70,29 +69,28 @@ const AllApps = () => {
     const timer = setTimeout(() => {
       setLateSearch(searchApp);
       setLoading(false);
-    }, 400); 
+    }, 400);
 
-    return () => clearTimeout(timer); 
+    return () => clearTimeout(timer);
   }, [searchApp]);
 
-  
   const searchResults = data.filter((app) =>
     app.title.toLowerCase().includes(lateSearch.toLowerCase())
   );
 
   return (
-    <div className='inter-font'>
-      <div className="m-5 p-2.5 text-center">
-        <h1 className="text-[#001931] text-5xl font-bold">
+    <div className="inter-font my-3 ">
+      <div className="mx-2 my-4 md:m-5 p-2.5 text-center">
+        <h1 className="text-[#001931] text-3xl md:text-5xl font-bold">
           Our All Applications
         </h1>
-        <p className="text-xl text-[#627382] mt-3">
+        <p className="text-base md:text-xl text-[#627382] mt-3">
           Explore All Apps on the Market developed by us. We code for Millions
         </p>
       </div>
 
-      <div className="flex justify-between items-center mb-4">
-        <p className="text-2xl font-semibold">
+      <div className="flex flex-col md:flex-row justify-between items-center mb-4 space-y-3 my-2 p-2">
+        <p className="text-sm md:text-2xl font-semibold">
           <span>({searchResults.length})</span> Apps Found
         </p>
         <input
@@ -104,25 +102,19 @@ const AllApps = () => {
         />
       </div>
 
-      {
-        loading && ( <Spinner></Spinner> )
-      }
-      
-      {
-        !loading && searchResults.length === 0 && lateSearch !== "" && (
-          <AppsNotFound />
-        )
-      }
+      {loading && <Spinner></Spinner>}
 
-      {
-        !loading && searchResults.length > 0 && (
-          <div className="grid grid-cols-4 gap-4">
-            {
-              searchResults.map(card => <Card key={card.id} card={card} />)
-            }
-          </div>
-        )
-      }
+      {!loading && searchResults.length === 0 && lateSearch !== "" && (
+        <AppsNotFound />
+      )}
+
+      {!loading && searchResults.length > 0 && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          {searchResults.map((card) => (
+            <Card key={card.id} card={card} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

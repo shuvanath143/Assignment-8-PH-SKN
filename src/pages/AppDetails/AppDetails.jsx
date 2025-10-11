@@ -40,29 +40,29 @@ const AppDetails = () => {
 
   return (
     <>
-      <div className="flex justify-center gap-5">
-        <div className="border-2 border-red-500 gap-4">
-          <img src={image} alt={title} className="w-60" />
+      <div className="flex flex-col md:flex-row justify-center gap-5 mx-2">
+        <div className="border-2 border-red-500 gap-4 px-2">
+          <img src={image} alt={title} className="w-full md:w-60" />
         </div>
-        <div className="border-2 border-red-500 flex-1 p-4">
+        <div className="border-2 border-red-500 flex-1 p-4 text-center md:text-justify">
           <p className="text-2xl font-bold">{title}</p>
           <p className="text-lg text-gray-700">Developed By: {companyName}</p>
           <div className="divider"></div>
-          <div className="flex gap-20">
+          <div className="flex flex-col md:flex-row md:gap-20">
             <div className="text-center">
-              <IoMdDownload className="text-[#00d390] text-3xl mx-auto" />
-              <p className="text-[#001931] text-xl">Download</p>
-              <p className="text-[#001931] text-4xl font-extrabold">{downloads}</p>
+              <IoMdDownload className="text-[#00d390] text-base md:text-3xl mx-auto" />
+              <p className="text-[#001931] text-base md:text-xl">Download</p>
+              <p className="text-[#001931] text-base md:text-4xl font-extrabold">{downloads}</p>
             </div>
             <div className="text-center">
-              <FaStar className="text-[#00d390] text-3xl mx-auto" />
-              <p className="text-[#001931] text-xl">Average Ratings</p>
-              <p className="text-[#001931] text-4xl font-extrabold">{ratingAvg}</p>
+              <FaStar className="text-[#00d390] text-base md:text-3xl mx-auto" />
+              <p className="text-[#001931] text-base md:text-xl">Average Ratings</p>
+              <p className="text-[#001931] text-base md:text-4xl font-extrabold">{ratingAvg}</p>
             </div>
             <div className="text-center">
-              <MdOutlinePreview className="text-[#00d390] text-3xl mx-auto" />
-              <p className="text-[#001931] text-xl">Total Reviews</p>
-              <p className="text-[#001931] text-4xl font-extrabold">{Math.floor(reviews / 1000)}K</p>
+              <MdOutlinePreview className="text-[#00d390] text-base md:text-3xl mx-auto" />
+              <p className="text-[#001931] text-base md:text-xl">Total Reviews</p>
+              <p className="text-[#001931] text-base md:text-4xl font-extrabold">{Math.floor(reviews / 1000)}K</p>
             </div>
           </div>
           <button

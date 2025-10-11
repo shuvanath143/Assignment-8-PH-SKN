@@ -3,6 +3,7 @@ import { use } from 'react';
 import Card from './Card';
 import { Link } from 'react-router';
 
+
 const Cards = ({appData}) => {
 
     const data = use(appData)
@@ -12,9 +13,9 @@ const Cards = ({appData}) => {
                 <p className='text-5xl font-bold'>Trending Apps</p>
                 <p>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='grid grid-cols-4 my-5'>
+            <div className='grid grid-cols-1 md:grid-cols-4 mx-2 my-5 gap-4'>
                 {
-                    data.slice(0, 8).map((card) => <Card card={card}></Card>)
+                    data.slice(0, 8).map((card) => <Card key={card.id} card={card}></Card>)
                 }
             </div>
             <div className='flex justify-center m-5'>

@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { IoHomeOutline } from "react-icons/io5";
+import { FaAppStore, FaGithub } from "react-icons/fa";
+import { MdInstallDesktop } from "react-icons/md";
 
 const Navbar = () => {
-  const handleOnApps = (e) => {
-    e.preventDefault();
-    window.open("/AllApps", "_blank");
-  };
+
+  const location = useLocation();
+  const [active, setActive] = useState("home");
+
+  useEffect(() => {
+    if (location.pathname === "/") setActive("home");
+    else if (location.pathname === "/AllApps") setActive("apps");
+    else if (location.pathname === "/Installation") setActive("install");
+  }, [location]);
 
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -33,41 +41,54 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <Link to="/">Home</Link>
-            {/* <li>
-              <a>Home</a>
-            </li> */}
             <li>
-              <a>Apps</a>
+              <Link to="/" className={`${active === "home" ? "bg-[#632EE3] text-white" : "text-gray-700"}`}>
+                <IoHomeOutline />Home
+              </Link>
             </li>
             <li>
-              <a>Installation</a>
+              <Link to="/AllApps"className={`${active === "apps" ? "bg-[#632EE3] text-white" : ""}`}>
+                <FaAppStore />Apps
+              </Link>
+            </li>
+            <li>
+              <Link to="/Installation" className={`${active === "install" ? "bg-[#632EE3] text-white" : ""}`}>
+                <MdInstallDesktop />Installation
+              </Link>
             </li>
           </ul>
         </div>
-        <div className="flex justify-center items-center gap-2">
-          <img src={logo} alt="hiiii" className="h-8" />
+        <Link to="/" className="flex justify-center items-center gap-2">
+          <img src={logo} alt="logo" className="h-8" />
           <span className="font-bold text-[#632EE3]">HERO.IO</span>
-        </div>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/AllApps" onClick={handleOnApps}>
-              Apps
+            <Link to="/" className={`${active === "home" ? "bg-[#632EE3] text-white" : ""}`}>
+              <IoHomeOutline />
+              <span className="text-base font-medium">Home</span>
             </Link>
           </li>
           <li>
-            <Link to="/Installation">Installation</Link>
+            <Link to="/AllApps" className={`${active === "apps" ? "bg-[#632EE3] text-white" : ""}`}>
+              <FaAppStore />
+              <span className="text-base font-medium">Apps</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/Installation" className={`${active === "install" ? "bg-[#632EE3] text-white" : ""}`}>
+            <MdInstallDesktop />
+            <span className="text-base font-medium">Installation</span>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to={`https://github.com/shuvanath143`} className="btn">
-          Contribution
+        <Link to={`https://github.com/shuvanath143`} className="btn bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]">
+          <FaGithub />
+          <span className="text-xs sm:text-base font-medium text-white">Contribution</span>
         </Link>
       </div>
     </div>
