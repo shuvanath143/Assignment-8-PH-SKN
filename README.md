@@ -1,4 +1,4 @@
-# 🌍 Digital Life Lessons Platform
+# 🌍 Hero Apps Platform
 
 ## 📌 Project Overview
 A modern and responsive web application built to show a apps playstore.
