@@ -1,4 +1,4 @@
-# 🌍 Hero Apps Platform
+# 🌍 Hero Apps Playstore Platform
 
 ## 📌 Project Overview
 A modern and responsive web application built to show a apps playstore.
